@@ -1,17 +1,19 @@
 #include "main.h"
+
 /**
- * _islower - returns 1 if lowercase alphabet and 0 otherwise
- * @c: takes in a character
- * Return: 0 for uppercase, 1 for lowercase
+ * print_alphabet_x10 - prints the alphabet in lowercase 10 times.
+ *
+ * Return: Always 0.
  */
-int _islower(int c)
+void print_alphabet_x10(void)
 {
-	if (c >= 'a' && c <= 'z')
+	int i;
+	char c;
+
+	for (i = 0; i < 10; i++)
 	{
-		return (1);
-	}
-	else
-	{
-		return (0);
+		for (c = 'a'; c <= 'z'; c++)
+			_putchar(c);
+		_putchar('\n');
 	}
 }
